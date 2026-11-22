@@ -1,3 +1,5 @@
+-- Put this into the Query Tool
+
 CREATE TABLE epa_ghg_1990s (
     ROWNUMBER int,
     ECON_SECTOR varchar,
@@ -60,6 +62,8 @@ CREATE TABLE epa_ghg_2000s (
     Y2019 double precision,
     Y2020 double precision
 );
+
+-- Download the csvs, put this into the PSQL tool, and change the paths to your own 
 
 \copy epa_ghg_1990s FROM '/Users/lexiluong/Documents/ENVS 5726 Fundamentals of Data for Env Studies/Week 11/EPA_GHG_By_Industry_1990s.csv' DELIMITER ',' CSV HEADER
 \copy epa_ghg_2000s FROM '/Users/lexiluong/Documents/ENVS 5726 Fundamentals of Data for Env Studies/Week 11/EPA_GHG_By_Industry_2000s.csv' DELIMITER ',' CSV HEADER
